@@ -10,6 +10,7 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
+    //Title
     private let label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -17,7 +18,7 @@ class ViewController: UIViewController {
         label.font = .systemFont(ofSize: 24, weight: .semibold)
         return label
     }()
-    
+    //Email Field
     private let emailField: UITextField = {
         let emailField = UITextField()
         emailField.placeholder = "Email Address"
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         emailField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         return emailField
     }()
-    
+    //Password Field
     private let passwordField: UITextField = {
         let passField = UITextField()
         passField.placeholder = "Password"
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
         passField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         return passField
     }()
-    
+    //Button sing in
     private let Button: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemGreen
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
         button.setTitle("Continue", for: .normal)
         return button
     }()
-    
+    //Button Sign Out
     private let signOutButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemGreen
@@ -65,9 +66,10 @@ class ViewController: UIViewController {
         view.addSubview(passwordField)
         view.addSubview(Button)
         view.backgroundColor = .blue
-    
+    //Button Action
         Button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-    // Hidden elements
+   
+        // Conditional for Hidden elements
         if FirebaseAuth.Auth.auth().currentUser != nil {
             label.isHidden = true
             emailField.isHidden = true
@@ -80,7 +82,7 @@ class ViewController: UIViewController {
             signOutButton.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
         }
     }
-    // Attribute
+    // Attribute button LOGOUT
     @objc private func logOutTapped() {
         do {
             try FirebaseAuth.Auth.auth().signOut()
@@ -94,7 +96,7 @@ class ViewController: UIViewController {
             
         }
         catch {
-            print("Ab error occurred")
+            print("An error occurred")
         }
     }
     
