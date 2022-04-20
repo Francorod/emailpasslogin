@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         let emailField = UITextField()
         emailField.placeholder = "Email Address"
         emailField.layer.borderWidth = 1
+        emailField.backgroundColor = .white
+        emailField.autocapitalizationType = .none
         emailField.layer.borderColor = UIColor.black.cgColor
+        emailField.leftViewMode = .always
+        emailField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         return emailField
     }()
     
@@ -30,8 +34,11 @@ class ViewController: UIViewController {
         let passField = UITextField()
         passField.placeholder = "Password"
         passField.layer.borderWidth = 1
+        passField.backgroundColor = .white
         passField.isSecureTextEntry = true
         passField.layer.borderColor = UIColor.black.cgColor
+        passField.leftViewMode = .always
+        passField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         return passField
     }()
     
@@ -43,6 +50,14 @@ class ViewController: UIViewController {
         return button
     }()
     
+    private let signOutButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .systemGreen
+        button.setTitleColor(.white, for: .normal)
+        button.setTitle("Log out", for: .normal)
+        return button
+    }()
+    //view inside tableView
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(label)
@@ -50,8 +65,37 @@ class ViewController: UIViewController {
         view.addSubview(passwordField)
         view.addSubview(Button)
         view.backgroundColor = .blue
-        
+    
         Button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+    // Hidden elements
+        if FirebaseAuth.Auth.auth().currentUser != nil {
+            label.isHidden = true
+            emailField.isHidden = true
+            passwordField.isHidden = true
+            Button.isHidden = true
+            
+    //SignOut Button
+            view.addSubview(signOutButton)
+            signOutButton.frame = CGRect(x: 20, y: 150, width: view.frame.size.width-40, height: 52)
+            signOutButton.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
+        }
+    }
+    // Attribute
+    @objc private func logOutTapped() {
+        do {
+            try FirebaseAuth.Auth.auth().signOut()
+            
+            label.isHidden = false
+            emailField.isHidden = false
+            passwordField.isHidden = false
+            Button.isHidden = false
+            
+            signOutButton.removeFromSuperview()
+            
+        }
+        catch {
+            print("Ab error occurred")
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -79,8 +123,12 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if FirebaseAuth.Auth.auth().currentUser == nil {
         emailField.becomeFirstResponder()
+            
     }
+}
     
     @objc private func didTapButton() {
         print("Continue Button Password")
@@ -106,9 +154,13 @@ class ViewController: UIViewController {
             strongSelf.emailField.isHidden = true
             strongSelf.passwordField.isHidden = true
             strongSelf.Button.isHidden = true
+            
+            strongSelf.emailField.resignFirstResponder()
+            strongSelf.passwordField.resignFirstResponder()
 
         })
     }
+    //Creat a new account
     func showCreateAccount(email: String, password: String) {
         let alert = UIAlertController(title: "Create Account",
                                       message: "Want have a account",
@@ -132,6 +184,10 @@ class ViewController: UIViewController {
                 strongSelf.emailField.isHidden = true
                 strongSelf.passwordField.isHidden = true
                 strongSelf.Button.isHidden = true
+                
+                
+                strongSelf.emailField.resignFirstResponder()
+                strongSelf.passwordField.resignFirstResponder()
             })
             
         }))
@@ -140,5 +196,6 @@ class ViewController: UIViewController {
                                       handler: {_ in
             
         }))
+        present(alert, animated: true)
     }
 }
