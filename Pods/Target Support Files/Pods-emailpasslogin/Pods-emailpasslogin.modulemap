@@ -1,0 +1,6 @@
+framework module Pods_emailpasslogin {
+  umbrella header "Pods-emailpasslogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
