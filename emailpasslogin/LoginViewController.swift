@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     //Title
     private let label: UILabel = {
@@ -66,9 +66,9 @@ class ViewController: UIViewController {
         view.addSubview(passwordField)
         view.addSubview(Button)
         view.backgroundColor = .blue
-    //Button Action
+        //Button Action
         Button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-   
+        
         // Conditional for Hidden elements
         if FirebaseAuth.Auth.auth().currentUser != nil {
             label.isHidden = true
@@ -76,13 +76,13 @@ class ViewController: UIViewController {
             passwordField.isHidden = true
             Button.isHidden = true
             
-    //SignOut Button
+            //SignOut Button
             view.addSubview(signOutButton)
             signOutButton.frame = CGRect(x: 20, y: 150, width: view.frame.size.width-40, height: 52)
             signOutButton.addTarget(self, action: #selector(logOutTapped), for: .touchUpInside)
         }
     }
-    // Attribute button LOGOUT
+    // Attribute button logout
     @objc private func logOutTapped() {
         do {
             try FirebaseAuth.Auth.auth().signOut()
@@ -127,19 +127,19 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if FirebaseAuth.Auth.auth().currentUser == nil {
-        emailField.becomeFirstResponder()
+            emailField.becomeFirstResponder()
             
+        }
     }
-}
     
     @objc private func didTapButton() {
         print("Continue Button Password")
         guard let email = emailField.text, !email.isEmpty,
               let password = passwordField.text, !password.isEmpty else {
             print("Missing field data")
+            
             return
         }
-        
         
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] result, error in
             guard let strongSelf = self else {
@@ -152,14 +152,7 @@ class ViewController: UIViewController {
                 return
             }
             print("You have signed in")
-            strongSelf.label.isHidden = true
-            strongSelf.emailField.isHidden = true
-            strongSelf.passwordField.isHidden = true
-            strongSelf.Button.isHidden = true
-            
-            strongSelf.emailField.resignFirstResponder()
-            strongSelf.passwordField.resignFirstResponder()
-
+            strongSelf.showHomeView()
         })
     }
     //Creat a new account
@@ -182,14 +175,7 @@ class ViewController: UIViewController {
                     return
                 }
                 print("You have signed in")
-                strongSelf.label.isHidden = true
-                strongSelf.emailField.isHidden = true
-                strongSelf.passwordField.isHidden = true
-                strongSelf.Button.isHidden = true
-                
-                
-                strongSelf.emailField.resignFirstResponder()
-                strongSelf.passwordField.resignFirstResponder()
+                strongSelf.showHomeView()
             })
             
         }))
@@ -199,5 +185,21 @@ class ViewController: UIViewController {
             
         }))
         present(alert, animated: true)
+    }
+    //method to call the next viewController
+    func showHomeView() {
+        label.isHidden = true
+        emailField.isHidden = true
+        passwordField.isHidden = true
+        Button.isHidden = true
+        
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        
+        let tabBarVc = TabBarController()
+        // This is to get the SceneDelegate object from your view controller
+        
+        // then call the change root view controller function to change to main tab bar
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(tabBarVc)
     }
 }

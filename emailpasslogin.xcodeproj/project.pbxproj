@@ -7,29 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C8A2B9C13B6D75C9234B85 /* Pods_emailpasslogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A6CFA92959A336C0E97156 /* Pods_emailpasslogin.framework */; };
+		9D1828762822CCBE0082188B /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1828752822CCBE0082188B /* PlaceDetailsViewController.swift */; };
+		9D18287C28256A7A0082188B /* PlaceSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18287B28256A7A0082188B /* PlaceSummary.swift */; };
+		9D18287F28256AD10082188B /* PlaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D18287E28256AD10082188B /* PlaceDetails.swift */; };
 		9D75A5A728103A9500B828F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D75A5A628103A9500B828F9 /* GoogleService-Info.plist */; };
+		9D8C3038281C695600704643 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C3037281C695600704643 /* HomeViewController.swift */; };
+		9D8C303C281D685500704643 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C303B281D685500704643 /* TabBarController.swift */; };
+		9D8C303E281D688700704643 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C303D281D688700704643 /* SearchViewController.swift */; };
+		9D8C3040281D689400704643 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C303F281D689400704643 /* FavoriteViewController.swift */; };
+		9D8C3042281D68A000704643 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C3041281D68A000704643 /* SettingsViewController.swift */; };
+		9D8C3044281D68C000704643 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C3043281D68C000704643 /* ProfileViewController.swift */; };
 		9DC250272805AE40008EDFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250262805AE40008EDFDD /* AppDelegate.swift */; };
 		9DC250292805AE40008EDFDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250282805AE40008EDFDD /* SceneDelegate.swift */; };
-		9DC2502B2805AE40008EDFDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2502A2805AE40008EDFDD /* ViewController.swift */; };
+		9DC2502B2805AE40008EDFDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2502A2805AE40008EDFDD /* LoginViewController.swift */; };
 		9DC2502E2805AE40008EDFDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2502C2805AE40008EDFDD /* Main.storyboard */; };
 		9DC250302805AE42008EDFDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2502F2805AE42008EDFDD /* Assets.xcassets */; };
 		9DC250332805AE42008EDFDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC250312805AE42008EDFDD /* LaunchScreen.storyboard */; };
-		B651E6E081A85A1AEC5DF679 /* Pods_emailpasslogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C76F1CDE3423F007C429D6 /* Pods_emailpasslogin.framework */; };
+		9DF26829282056B20076220E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF26828282056B20076220E /* ResultsViewController.swift */; };
+		9DF2682B282069C60076220E /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF2682A282069C60076220E /* GooglePlacesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18C76F1CDE3423F007C429D6 /* Pods_emailpasslogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emailpasslogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		611B640F161F0347FF606129 /* Pods-emailpasslogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailpasslogin.release.xcconfig"; path = "Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin.release.xcconfig"; sourceTree = "<group>"; };
+		404F90E570DDA6E81FDFDB24 /* Pods-emailpasslogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailpasslogin.release.xcconfig"; path = "Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin.release.xcconfig"; sourceTree = "<group>"; };
+		94A6CFA92959A336C0E97156 /* Pods_emailpasslogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emailpasslogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1828752822CCBE0082188B /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		9D18287B28256A7A0082188B /* PlaceSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSummary.swift; sourceTree = "<group>"; };
+		9D18287E28256AD10082188B /* PlaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetails.swift; sourceTree = "<group>"; };
+		9D4C57E1281F02C500FBDFBF /* emailpasslogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emailpasslogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D75A5A628103A9500B828F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9DC250232805AE40008EDFDD /* emailpasslogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emailpasslogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8C3037281C695600704643 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D8C303B281D685500704643 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9D8C303D281D688700704643 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9D8C303F281D689400704643 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		9D8C3041281D68A000704643 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9D8C3043281D68C000704643 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9DC250262805AE40008EDFDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC250282805AE40008EDFDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DC2502A2805AE40008EDFDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DC2502A2805AE40008EDFDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9DC2502D2805AE40008EDFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DC2502F2805AE42008EDFDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC250322805AE42008EDFDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DC250342805AE42008EDFDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6C54F62D86A7E37D4EB08A9 /* Pods-emailpasslogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailpasslogin.debug.xcconfig"; path = "Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF26828282056B20076220E /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		9DF2682A282069C60076220E /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
+		B2F42C0E26042104C07FC32E /* Pods-emailpasslogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailpasslogin.debug.xcconfig"; path = "Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,38 +59,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B651E6E081A85A1AEC5DF679 /* Pods_emailpasslogin.framework in Frameworks */,
+				83C8A2B9C13B6D75C9234B85 /* Pods_emailpasslogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12D02142293B8AE506BFAE22 /* Pods */ = {
+		92BC9C155578F95966052773 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6C54F62D86A7E37D4EB08A9 /* Pods-emailpasslogin.debug.xcconfig */,
-				611B640F161F0347FF606129 /* Pods-emailpasslogin.release.xcconfig */,
+				94A6CFA92959A336C0E97156 /* Pods_emailpasslogin.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D18287D28256AB80082188B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D18287B28256A7A0082188B /* PlaceSummary.swift */,
+				9D18287E28256AD10082188B /* PlaceDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D1828802825763D0082188B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9D8C303D281D688700704643 /* SearchViewController.swift */,
+				9DF26828282056B20076220E /* ResultsViewController.swift */,
+				9D1828752822CCBE0082188B /* PlaceDetailsViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		9DC2501A2805AE40008EDFDD = {
 			isa = PBXGroup;
 			children = (
 				9DC250252805AE40008EDFDD /* emailpasslogin */,
-				9DC250242805AE40008EDFDD /* Products */,
-				12D02142293B8AE506BFAE22 /* Pods */,
-				AED1917E9C60EAB83366DF57 /* Frameworks */,
+				9D4C57E1281F02C500FBDFBF /* emailpasslogin.app */,
+				D5F19031BF36AAA6A39344D8 /* Pods */,
+				92BC9C155578F95966052773 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		9DC250242805AE40008EDFDD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9DC250232805AE40008EDFDD /* emailpasslogin.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9DC250252805AE40008EDFDD /* emailpasslogin */ = {
@@ -76,22 +108,31 @@
 			children = (
 				9DC250262805AE40008EDFDD /* AppDelegate.swift */,
 				9DC250282805AE40008EDFDD /* SceneDelegate.swift */,
-				9DC2502A2805AE40008EDFDD /* ViewController.swift */,
+				9DC2502A2805AE40008EDFDD /* LoginViewController.swift */,
+				9D8C3037281C695600704643 /* HomeViewController.swift */,
+				9D1828802825763D0082188B /* Search */,
+				9D8C303F281D689400704643 /* FavoriteViewController.swift */,
+				9D8C3043281D68C000704643 /* ProfileViewController.swift */,
+				9D8C3041281D68A000704643 /* SettingsViewController.swift */,
+				9D8C303B281D685500704643 /* TabBarController.swift */,
+				9DF2682A282069C60076220E /* GooglePlacesManager.swift */,
 				9DC2502C2805AE40008EDFDD /* Main.storyboard */,
 				9DC2502F2805AE42008EDFDD /* Assets.xcassets */,
 				9DC250312805AE42008EDFDD /* LaunchScreen.storyboard */,
 				9D75A5A628103A9500B828F9 /* GoogleService-Info.plist */,
 				9DC250342805AE42008EDFDD /* Info.plist */,
+				9D18287D28256AB80082188B /* Models */,
 			);
 			path = emailpasslogin;
 			sourceTree = "<group>";
 		};
-		AED1917E9C60EAB83366DF57 /* Frameworks */ = {
+		D5F19031BF36AAA6A39344D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				18C76F1CDE3423F007C429D6 /* Pods_emailpasslogin.framework */,
+				B2F42C0E26042104C07FC32E /* Pods-emailpasslogin.debug.xcconfig */,
+				404F90E570DDA6E81FDFDB24 /* Pods-emailpasslogin.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +147,7 @@
 				9DC250202805AE40008EDFDD /* Frameworks */,
 				9DC250212805AE40008EDFDD /* Resources */,
 				AB1E95FC4ACE1EB31A3C16DE /* [CP] Embed Pods Frameworks */,
+				79DA61430C24AB8279156C5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,7 +155,7 @@
 			);
 			name = emailpasslogin;
 			productName = emailpasslogin;
-			productReference = 9DC250232805AE40008EDFDD /* emailpasslogin.app */;
+			productReference = 9D4C57E1281F02C500FBDFBF /* emailpasslogin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +182,7 @@
 				Base,
 			);
 			mainGroup = 9DC2501A2805AE40008EDFDD;
-			productRefGroup = 9DC250242805AE40008EDFDD /* Products */;
+			productRefGroup = 9DC2501A2805AE40008EDFDD;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -186,6 +228,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		79DA61430C24AB8279156C5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-emailpasslogin/Pods-emailpasslogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AB1E95FC4ACE1EB31A3C16DE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,9 +269,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DC2502B2805AE40008EDFDD /* ViewController.swift in Sources */,
+				9D8C303E281D688700704643 /* SearchViewController.swift in Sources */,
+				9DF2682B282069C60076220E /* GooglePlacesManager.swift in Sources */,
+				9DC2502B2805AE40008EDFDD /* LoginViewController.swift in Sources */,
+				9D18287C28256A7A0082188B /* PlaceSummary.swift in Sources */,
+				9D8C3042281D68A000704643 /* SettingsViewController.swift in Sources */,
+				9DF26829282056B20076220E /* ResultsViewController.swift in Sources */,
 				9DC250272805AE40008EDFDD /* AppDelegate.swift in Sources */,
+				9D1828762822CCBE0082188B /* PlaceDetailsViewController.swift in Sources */,
 				9DC250292805AE40008EDFDD /* SceneDelegate.swift in Sources */,
+				9D8C303C281D685500704643 /* TabBarController.swift in Sources */,
+				9D18287F28256AD10082188B /* PlaceDetails.swift in Sources */,
+				9D8C3038281C695600704643 /* HomeViewController.swift in Sources */,
+				9D8C3040281D689400704643 /* FavoriteViewController.swift in Sources */,
+				9D8C3044281D68C000704643 /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +424,7 @@
 		};
 		9DC250382805AE42008EDFDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6C54F62D86A7E37D4EB08A9 /* Pods-emailpasslogin.debug.xcconfig */;
+			baseConfigurationReference = B2F42C0E26042104C07FC32E /* Pods-emailpasslogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,13 +447,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9DC250392805AE42008EDFDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 611B640F161F0347FF606129 /* Pods-emailpasslogin.release.xcconfig */;
+			baseConfigurationReference = 404F90E570DDA6E81FDFDB24 /* Pods-emailpasslogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,7 +476,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

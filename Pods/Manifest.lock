@@ -68,6 +68,12 @@ PODS:
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleMaps (6.1.1):
+    - GoogleMaps/Maps (= 6.1.1)
+  - GoogleMaps/Base (6.1.1)
+  - GoogleMaps/Maps (6.1.1):
+    - GoogleMaps/Base
+  - GooglePlaces (6.1.1)
   - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -98,6 +104,8 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - GoogleMaps
+  - GooglePlaces
 
 SPEC REPOS:
   trunk:
@@ -109,6 +117,8 @@ SPEC REPOS:
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleDataTransport
+    - GoogleMaps
+    - GooglePlaces
     - GoogleUtilities
     - GTMSessionFetcher
     - nanopb
@@ -123,11 +133,13 @@ SPEC CHECKSUMS:
   FirebaseInstallations: 60edbf7e11d91ae4c751d26c200dfd037099abe0
   GoogleAppMeasurement: 135c2fbcf5038e0f37dbce04fa641a702fc275d1
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
+  GoogleMaps: 94e6e0851beece6678af9f508f4918b7a7c61722
+  GooglePlaces: 9c1f3baa75191b94dfc12b80a801292e03977f73
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: b9a85c17f74e7acf3a3e698f72fb16fddfbdff80
+PODFILE CHECKSUM: 787dd72bfc232c3e76df1b8c7f0fc4b9fdc18184
 
 COCOAPODS: 1.11.3
