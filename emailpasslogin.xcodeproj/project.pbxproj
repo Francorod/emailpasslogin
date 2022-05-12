@@ -18,6 +18,7 @@
 		9D8C3040281D689400704643 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C303F281D689400704643 /* FavoriteViewController.swift */; };
 		9D8C3042281D68A000704643 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C3041281D68A000704643 /* SettingsViewController.swift */; };
 		9D8C3044281D68C000704643 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8C3043281D68C000704643 /* ProfileViewController.swift */; };
+		9DBEB7C92829CE9B00F058D7 /* AccountInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBEB7C82829CE9B00F058D7 /* AccountInformationViewController.swift */; };
 		9DC250272805AE40008EDFDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250262805AE40008EDFDD /* AppDelegate.swift */; };
 		9DC250292805AE40008EDFDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC250282805AE40008EDFDD /* SceneDelegate.swift */; };
 		9DC2502B2805AE40008EDFDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2502A2805AE40008EDFDD /* LoginViewController.swift */; };
@@ -42,6 +43,7 @@
 		9D8C303F281D689400704643 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		9D8C3041281D68A000704643 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9D8C3043281D68C000704643 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9DBEB7C82829CE9B00F058D7 /* AccountInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformationViewController.swift; sourceTree = "<group>"; };
 		9DC250262805AE40008EDFDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC250282805AE40008EDFDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9DC2502A2805AE40008EDFDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -113,15 +115,16 @@
 				9D1828802825763D0082188B /* Search */,
 				9D8C303F281D689400704643 /* FavoriteViewController.swift */,
 				9D8C3043281D68C000704643 /* ProfileViewController.swift */,
+				9DBEB7C82829CE9B00F058D7 /* AccountInformationViewController.swift */,
 				9D8C3041281D68A000704643 /* SettingsViewController.swift */,
 				9D8C303B281D685500704643 /* TabBarController.swift */,
 				9DF2682A282069C60076220E /* GooglePlacesManager.swift */,
+				9D18287D28256AB80082188B /* Models */,
 				9DC2502C2805AE40008EDFDD /* Main.storyboard */,
 				9DC2502F2805AE42008EDFDD /* Assets.xcassets */,
 				9DC250312805AE42008EDFDD /* LaunchScreen.storyboard */,
 				9D75A5A628103A9500B828F9 /* GoogleService-Info.plist */,
 				9DC250342805AE42008EDFDD /* Info.plist */,
-				9D18287D28256AB80082188B /* Models */,
 			);
 			path = emailpasslogin;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				9D8C303E281D688700704643 /* SearchViewController.swift in Sources */,
 				9DF2682B282069C60076220E /* GooglePlacesManager.swift in Sources */,
+				9DBEB7C92829CE9B00F058D7 /* AccountInformationViewController.swift in Sources */,
 				9DC2502B2805AE40008EDFDD /* LoginViewController.swift in Sources */,
 				9D18287C28256A7A0082188B /* PlaceSummary.swift in Sources */,
 				9D8C3042281D68A000704643 /* SettingsViewController.swift in Sources */,

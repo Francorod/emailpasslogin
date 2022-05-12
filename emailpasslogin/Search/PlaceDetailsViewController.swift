@@ -3,7 +3,6 @@
 //  emailpasslogin
 //
 //  Created by Franco Rodrigues on 5/4/22.
-//
 
 import UIKit
 
@@ -60,5 +59,5 @@ class PlaceDetailsViewController: UIViewController {
         view.addSubview(websiteLabel)
         
     }
-    
+
 }

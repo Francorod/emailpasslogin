@@ -1,26 +1,27 @@
 //
-//  settingsViewController.swift
+//  AccountInformationViewController.swift
 //  emailpasslogin
 //
-//  Created by Franco Rodrigues on 4/30/22.
+//  Created by Franco Rodrigues on 5/9/22.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController, UITextViewDelegate {
-    
+class AccountInformationViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        initView()
-        
+
         //Account Information
+        // Change or Add a new e-mail
+        // Change or Add Phone Number
+        // Password change
+        
         let AccountinfoLabel = UILabel()
         
         AccountinfoLabel.frame = CGRect(x: 5, y: 220, width: 250, height: 50)
         AccountinfoLabel.textAlignment = .left
-        AccountinfoLabel.text = "Account Information"
+        AccountinfoLabel.text = "E-mail"
         AccountinfoLabel.textColor = .black
         view.addSubview(AccountinfoLabel)
         
@@ -29,7 +30,7 @@ class SettingsViewController: UIViewController, UITextViewDelegate {
         let HelpFeedback = UILabel()
         HelpFeedback.frame = CGRect(x: 5, y: 260, width: 250, height: 60)
         HelpFeedback.textAlignment = .left
-        HelpFeedback.text = "Help & Feedback"
+        HelpFeedback.text = "Phone Number"
         HelpFeedback.textColor = .black
         view.addSubview(HelpFeedback)
         
@@ -37,19 +38,22 @@ class SettingsViewController: UIViewController, UITextViewDelegate {
         let PrivacyPolicy = UILabel()
         PrivacyPolicy.frame = CGRect(x: 5, y: 300, width: 250, height: 60)
         PrivacyPolicy.textAlignment = .left
-        PrivacyPolicy.text = "Privacy Policy"
+        PrivacyPolicy.text = "Password"
         PrivacyPolicy.textColor = .black
         view.addSubview(PrivacyPolicy)
         view.backgroundColor = .white
         
-        
-        view.backgroundColor = .white
+        // Save Button
+        let button = UIButton()
+        button.frame = CGRect(x: 10, y: 360, width: 150, height: 40)
+        button.backgroundColor = UIColor.gray
+        button.setTitle("Save", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(button)
     }
-    
-    func initView() {
-        
-        
-        
+    @objc func buttonAction(sender: UIButton!) {
+        print("Button tapped")
     }
-    
+     
 }
+

@@ -3,7 +3,7 @@
 //  emailpasslogin
 //
 //  Created by Franco Rodrigues on 5/2/22.
-//
+
 import UIKit
 import GoogleMaps
 
@@ -31,6 +31,7 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         view.backgroundColor = .yellow
         tableView.delegate = self
         tableView.dataSource = self
+        
         
     }
     override func viewDidLayoutSubviews() {
@@ -61,4 +62,5 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let place = places[indexPath.row]
         delegate?.didTapPlace(with: place)
     }
+   
 }

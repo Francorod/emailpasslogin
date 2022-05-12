@@ -16,7 +16,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+            //Tabs Set Up
         let tab1 = createNavController(for: HomeViewController(),title: "Home", image: UIImage(systemName: "house"))
         let tab2 = createNavController(for: SearchViewController(), title: "Search", image: UIImage(systemName: "magnifyingglass"))
         let tab3 = createNavController(for: FavoriteViewController(), title: "Favorites", image: UIImage(systemName: "star"))

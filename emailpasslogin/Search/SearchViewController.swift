@@ -17,7 +17,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Background
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBlue
         //Search bar
         searchVC.searchBar.backgroundColor = .secondarySystemBackground
         searchVC.searchResultsUpdater = self

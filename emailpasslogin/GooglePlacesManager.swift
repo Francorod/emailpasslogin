@@ -8,7 +8,7 @@
 import Foundation
 import GooglePlaces
 import CoreLocation
-import GoogleMaps
+
 
 final class GooglePlacesManager {
     static let shared = GooglePlacesManager()
@@ -55,9 +55,9 @@ final class GooglePlacesManager {
         // Specify the place data types to return.
         let fields: GMSPlaceField = GMSPlaceField(rawValue:
                                                     UInt(GMSPlaceField.all.rawValue))
-        
         client.fetchPlace(
             fromPlaceID: place.identifier,
+            
             //change this placeFields to geo or name
             placeFields: fields,
             
@@ -82,11 +82,10 @@ final class GooglePlacesManager {
                 coordinates: coordinate
             )
             completion(.success(details))
-            
-            
         }
     }
-
+    
+    //Place Image
     func loadImage(for photoMetadata: GMSPlacePhotoMetadata, into view: UIImageView) {
         client.loadPlacePhoto(photoMetadata, callback: { (photo, error) -> Void in
             if let error = error {
@@ -97,6 +96,4 @@ final class GooglePlacesManager {
             }
         })
     }
-    
 }
-
